@@ -39,7 +39,7 @@ const Footer = () => {
             <div className="flex items-center mb-4">
               <Rocket className="h-8 w-8 text-[#FF5E78] mr-2" />
               <span className="text-2xl font-bold bg-gradient-to-r from-[#FF5E78] to-[#6E3CBC] text-transparent bg-clip-text">
-                Hacktrøn
+              HACKTRØN
               </span>
             </div>
             <p className="text-gray-400 mb-6">
@@ -77,7 +77,7 @@ const Footer = () => {
         
         <div className="border-t border-[#6E3CBC]/30 pt-8 mt-8 text-center text-gray-400">
           <p className="mb-4">
-            &copy; {currentYear} Hacktrøn. All rights reserved.
+            &copy; {currentYear} HACKTRØN. All rights reserved.
           </p>
           <p className="flex items-center justify-center text-sm">
             Made with <Heart className="h-4 w-4 text-[#FF5E78] mx-1" /> by Code Conquerors Community

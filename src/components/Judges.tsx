@@ -4,6 +4,8 @@ import DKVsir from '../assets/DKVsir.png';
 import NVGsir from '../assets/NVGsir.png';
 import ShekharSir from '../assets/ShekharSir.png';
 import Pratham from '../assets/Pratham.jpeg';
+import TamannaMam from '../assets/Tamanna.jpg'
+import DeepakSir from '../assets/DeepakSir.png'
 
 const Judges = () => {
   const judges = [
@@ -31,6 +33,16 @@ const Judges = () => {
       name: "Dr. Shekhar Singh",
       title: "Judge",
       image: ShekharSir
+    },
+    {
+      name: "Dr. Deepak Kumar",
+      title: "Judge",
+      image: DeepakSir
+    },
+    {
+      name: "Dr. Tamanna Agarwal",
+      title: "Judge",
+      image: TamannaMam
     },
     {
       name: "Pratham Batra",

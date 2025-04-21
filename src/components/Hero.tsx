@@ -43,7 +43,7 @@ const Hero = () => {
               }`}
           >
             <span className="bg-gradient-to-r from-[#FF5E78] to-[#6E3CBC] text-transparent bg-clip-text inline-block">
-              HackTrøn
+              HACKTRØN
             </span>
             <br />
             <span className="text-white">2025</span>
