@@ -3,12 +3,26 @@ import ShashwatShukla from '../assets/ShaswatShukla.jpeg';
 import AryanJaiswal from '../assets/AryanJaiswal.jpg';
 import AvinashSharma from '../assets/AvinashSharma.jpg';
 import SatyamKumar from '../assets/SatyamKumar.jpeg';
+import JayeshSir from '../assets/Jayesh.jpeg';
+import Shouray from '../assets/Shouray.jpg';
+import KanchiGupta from '../assets/KanchiGupta.jpg';
+import AnupamSir from '../assets/AnupamSir.jpeg';
+import Ayaan from '../assets/Ayaan.jpeg';
+import Soham from '../assets/SohamGhosh.jpg';
+import Aaradhya from '../assets/AaradhyaWaoo.jpg';
+import Ayush from '../assets/AyushPrakash.jpeg';
+import Prince from '../assets/PrinceYadav.jpeg';
 
 // Define TypeScript interfaces
 interface TeamMemberType {
   name: string;
   role: string;
   image: string;
+}
+
+interface TeamSectionType {
+  title: string;
+  members: TeamMemberType[];
 }
 
 interface TeamMemberProps {
@@ -18,26 +32,91 @@ interface TeamMemberProps {
 const HostingTeam = () => {
   const [hoveredMember, setHoveredMember] = useState<string | null>(null);
   
-  const teamMembers: TeamMemberType[] = [
+  const teamSections: TeamSectionType[] = [
     {
-      name: "Shashwat Shukla",
-      role: "Lead Organiser",
-      image: ShashwatShukla
+      title: "Organizers",
+      members: [
+        {
+          name: "Shashwat Shukla",
+          role: "Lead Organiser",
+          image: ShashwatShukla
+        },
+        {
+          name: "Aryan Jaiswal",
+          role: "Lead Organiser",
+          image: AryanJaiswal
+        }
+      ]
     },
     {
-      name: "Aryan Jaiswal",
-      role: "Lead Organiser",
-      image: AryanJaiswal
+      title: "Technical Team",
+      members: [
+        {
+          name: "Avinash Sharma",
+          role: "Technical Lead",
+          image: AvinashSharma
+        },
+        {
+          name: "Satyam Kumar",
+          role: "Technical Lead",
+          image: SatyamKumar
+        },
+        {
+          name: "Soham Ghosh",
+          role: "Technical Core Member",
+          image: Soham
+        }
+      ]
     },
     {
-      name: "Avinash Sharma",
-      role: "Technical Lead",
-      image: AvinashSharma
+      title: "Management Team",
+      members: [
+        {
+          name: "Shouray Soni",
+          role: "Management Lead",
+          image: Shouray 
+        },
+        {
+          name: "Jayesh Bansal",
+          role: "Operations Manager",
+          image: JayeshSir
+        },
+        {
+          name: "Ayush Prakash",
+          role: "Management Core Member",
+          image: Ayush
+        },
+        {
+          name: "Ayaan Khan",
+          role: "Management Core Member",
+          image: Ayaan
+        }
+      ]
     },
     {
-      name: "Satyam Kumar",
-      role: "Technical Lead",
-      image: SatyamKumar
+      title: "Media Team",
+      members: [
+        {
+          name: "Anupam Dwivedi",
+          role: "Media Lead",
+          image: AnupamSir
+        },
+        {
+          name: "Prince Yadav",
+          role: "Media Core Member",
+          image: Prince
+        },
+        {
+          name: "Kanchi Gupta",
+          role: "Media Core Member",
+          image: KanchiGupta
+        },
+        {
+          name: "Aaradhya Waoo",
+          role: "Anchoring Core Member",
+          image: Aaradhya
+        }
+      ]
     }
   ];
 
@@ -69,23 +148,46 @@ const HostingTeam = () => {
     );
   };
 
+  // Function to determine grid class based on section type and member count
+  const getGridClass = (sectionTitle: string, membersCount: number) => {
+    // Special case for Technical Team to center it
+    if (sectionTitle === "Technical Team") {
+      return "grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-12 max-w-5xl mx-auto justify-items-center";
+    }
+    // Original logic for other teams
+    if (membersCount === 2) {
+      return "grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-8 md:gap-12 max-w-4xl mx-auto";
+    }
+    return "grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-12";
+  };
+
   return (
     <section id="team" className="py-24 relative">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-20">
           <h2 className="text-4xl md:text-5xl font-bold mb-6">
-            Hosting <span className="bg-gradient-to-r from-[#FF5E78] to-[#6E3CBC] text-transparent bg-clip-text">Team</span>
+            Hacktrøn <span className="bg-gradient-to-r from-[#FF5E78] to-[#6E3CBC] text-transparent bg-clip-text">Team</span>
           </h2>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-            Meet the dedicated team making Hacktrøn possible.
+            Meet the dedicated teams making Hacktrøn possible.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-12">
-          {teamMembers.map((member, index) => (
-            <TeamMember key={index} member={member} />
-          ))}
-        </div>
+        {teamSections.map((section, sectionIndex) => (
+          <div key={sectionIndex} className="mb-20">
+            <h3 className="text-3xl md:text-4xl font-bold mb-12 text-center">
+              <span className="bg-gradient-to-r from-[#FF5E78] to-[#6E3CBC] text-transparent bg-clip-text">
+                {section.title}
+              </span>
+            </h3>
+            
+            <div className={getGridClass(section.title, section.members.length)}>
+              {section.members.map((member, memberIndex) => (
+                <TeamMember key={memberIndex} member={member} />
+              ))}
+            </div>
+          </div>
+        ))}
       </div>
     </section>
   );

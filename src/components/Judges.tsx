@@ -3,6 +3,7 @@ import VRsir from '../assets/VRsir.png';
 import DKVsir from '../assets/DKVsir.png';
 import NVGsir from '../assets/NVGsir.png';
 import ShekharSir from '../assets/ShekharSir.png';
+import Pratham from '../assets/Pratham.jpeg';
 
 const Judges = () => {
   const judges = [
@@ -30,6 +31,11 @@ const Judges = () => {
       name: "Dr. Shekhar Singh",
       title: "Judge",
       image: ShekharSir
+    },
+    {
+      name: "Pratham Batra",
+      title: "Judge, Co-Founder of Geek Room",
+      image: Pratham
     }
   ];
 

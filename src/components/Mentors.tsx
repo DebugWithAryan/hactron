@@ -4,10 +4,16 @@ import TanishBhole from '../assets/TanishBhole.jpg';
 import SnehalSaurabh from '../assets/SnehalSir.jpg';
 import VibhorPhalke from '../assets/VibhorPhalke.jpg';
 import ShashwatSingh from '../assets/ShashwatPSingh.jpg';
+import TonSociety from "../assets/Shyaamal.jpeg"
 
 
 const Mentors = () => {
   const mentors = [
+    {
+      name: "Shyaamal Tripathi",
+      expertise: "Speaker, Ton Society India",
+      image: TonSociety
+    },
     {
       name: "Shrijan Sahay Srivastava",
       expertise: "3x MLH Hackathon Winner",
@@ -40,7 +46,7 @@ const Mentors = () => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
-            Our <span className="bg-gradient-to-r from-[#FF5E78] to-[#6E3CBC] text-transparent bg-clip-text">Mentors</span>
+            Our <span className="bg-gradient-to-r from-[#FF5E78] to-[#6E3CBC] text-transparent bg-clip-text">Mentors and Speaker</span>
           </h2>
           <p className="text-lg text-gray-300 max-w-3xl mx-auto">
             Expert guidance from industry professionals to help you reach the stars.
