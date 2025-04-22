@@ -132,10 +132,10 @@ const FAQ = () => {
             Still have questions? Feel free to reach out!
           </p>
           <a
-            href="mailto:hacktron@juet.ac.in"
+            href="mailto:codeconquerors7@gmail.com"
             className="text-[#FF5E78] hover:underline font-medium"
           >
-            hacktron@juet.ac.in
+            codeconquerors7@gmail.com
           </a>
           <br />
           <span className="text-[#FF5E78] font-medium">
