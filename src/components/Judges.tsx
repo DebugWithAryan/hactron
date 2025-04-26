@@ -10,7 +10,7 @@ import DeepakSir from '../assets/DeepakSir.png'
 const Judges = () => {
   const judges = [
     {
-      name: "Dr. Parth Sarthy Banarjee",
+      name: "Dr. Partha Sarthy Banarjee",
       title: "Judge",
       image: PSB
     },
