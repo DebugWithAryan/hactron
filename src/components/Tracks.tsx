@@ -75,10 +75,9 @@ const Tracks = () => {
       description: "Build innovative Internet of Things applications that connect devices and systems. Create smart solutions for homes, cities, or industrial applications.",
       color: "#FF5E78",
       problems: [
-        "Design a smart home system that optimizes energy consumption by learning user habits",
-        "Develop an IoT solution for monitoring and managing water quality in urban areas",
-        "Create a wearable device that can predict and prevent health emergencies",
-        "Build an intelligent traffic management system to reduce congestion in urban areas"
+        "Problem Statement I1: Develop a solution regarding this issue: Manual streetlight management leads to energy waste. Create an IoT system to automate brightness based on motion/ambient light.",
+        "Problem Statement I2: Develop a solution regarding this issue: Noisy industrial zones lack real-time noise pollution tracking. Build a low-cost IoT device to map noise levels and alert authorities.",
+        "Problem Statement I3: Develop a solution regarding this issue: Public trash bins often overflow. Design a smart bin network that alerts waste collectors when bins are 80% full."
       ]
     },
     {
@@ -87,10 +86,9 @@ const Tracks = () => {
       description: "Develop medical and healthcare-related solutions that improve patient care, streamline clinical workflows, or address public health challenges.",
       color: "#6E3CBC",
       problems: [
-        "Build a telemedicine platform optimized for rural communities with limited internet access",
-        "Create an AI-driven diagnostic tool for early detection of chronic diseases",
-        "Develop a patient management system that improves hospital workflow efficiency",
-        "Design a mental health application that provides personalized support and resources"
+        "Problem Statement H1: Develop a solution regarding this issue: Patients forget medication schedules. Create a voice/chat-based reminder system with escalation alerts to family members.",
+        "Problem Statement H2: Develop a solution regarding this issue: No centralized platform for blood donors. Develop an app matching donors with nearby hospitals/patients during emergencies.",
+        "Problem Statement H3: Develop a solution regarding this issue: One-size-fits-all diets and fitness plans are ineffective for most people. Solution Idea: Build a system that uses user data (age, weight, allergies, diseases, goals) to recommend customized plans."
       ]
     },
     {
@@ -99,10 +97,9 @@ const Tracks = () => {
       description: "Create educational tools and learning platforms that enhance accessibility to knowledge, improve learning outcomes, or revolutionize teaching methods.",
       color: "#3ABEFF",
       problems: [
-        "Develop an adaptive learning platform that customizes content based on individual learning styles",
-        "Create a solution that makes quality education accessible to students with disabilities",
-        "Build a collaborative learning environment that facilitates peer-to-peer knowledge sharing",
-        "Design an application that gamifies learning complex subjects for younger students"
+        "Problem Statement E1: Develop a solution regarding this issue: Teachers spend excessive time manually creating quizzes tailored to specific topics, difficulty levels, and learning objectives. Develop an AI-powered quiz generator that lets educators input a topic (e.g., \"Photosynthesis\"), select the number of questions, choose a difficulty level (easy/medium/hard), and instantly generate relevant questions with answer keys.",
+        "Problem Statement E2: Develop a solution regarding this issue: Language barriers hinder learning. Create a tool that converts textbooks into bite-sized audio lessons in regional languages.",
+        "Problem Statement E3: Develop a solution regarding this issue: Develop a digital permission management system to eliminate colleges' paper-based approval processes by automating lecture hall bookings, event requests, and multi-department sign-offs through a centralized online platform with real-time tracking."
       ]
     },
     {
@@ -111,10 +108,9 @@ const Tracks = () => {
       description: "Design safety solutions and applications specifically for women, addressing personal security concerns, emergency response, or community support networks.",
       color: "#26C485",
       problems: [
-        "Create a discreet emergency alert system with location sharing capabilities",
-        "Develop a community-based safety network for women commuters",
-        "Build a platform that identifies and reports harassment in online spaces",
-        "Design a safety education application with self-defense resources and guidance"
+        "Problem Statement W1: In rural areas, women often struggle to access emergency help due to poor network coverage and isolation. This makes it difficult for them to alert family members or authorities during emergencies. A reliable solution is needed that enables women to send discreet distress signals via basic SMS, even without internet access, ensuring they can receive timely help in critical situations.",
+        "Problem Statement W2: Develop a solution regarding this issue: Safe public toilets are hard to find. Build a crowdsourced map showing cleanliness, lighting, and availability of facilities.",
+        "Problem Statement W3: Develop a solution regarding this issue: Cumbersome harassment reporting and fear of retaliation by creating an anonymous platform for users to securely report incidents, tag locations, and generate real-time heatmaps to inform policy interventions"
       ]
     },
     {
@@ -123,10 +119,9 @@ const Tracks = () => {
       description: "Build farming and agribusiness technology innovations that improve crop yields, optimize resource usage, or create sustainable agricultural practices.",
       color: "#F2B705",
       problems: [
-        "Develop a precision farming solution that optimizes water and fertilizer usage",
-        "Create a marketplace connecting small-scale farmers directly to consumers",
-        "Build a crop disease identification and treatment recommendation system",
-        "Design a sustainable irrigation management system for water-scarce regions"
+        "Problem Statement A1: Many farmers face crop loss because they don't know the right time to harvest. Without proper tools, they rely on guesswork, which leads to delays and waste. There is a need for a smart system that uses weather data and phone photos to predict crop ripeness and guide timely harvesting.",
+        "Problem Statement A2: Many farmers struggle to know which pests are damaging their crops, so they use strong chemicals that can be harmful. Without proper guidance, this leads to poor crop health and low yield. A solution is needed to help farmers quickly identify pests and use natural, safe methods to control them.",
+        "Problem Statement A3: Small farmers usually get only a small part of the final price of their crops because too many middlemen take a share. The supply chain is unclear, so farmers don't know how prices are set, and buyers don't know where their food comes from. People buying food can't easily check if it's fresh, good quality, or grown in a fair way. As a result, farmers in villages don't earn enough and can't sell their produce directly to the market."
       ]
     },
     {
@@ -135,10 +130,7 @@ const Tracks = () => {
       description: "Showcase your creativity with projects that don't fit traditional categories. Surprise us with novel solutions to unique problems or entirely new concepts.",
       color: "#E85D75",
       problems: [
-        "Create a solution that addresses any UN Sustainable Development Goal",
-        "Develop a platform that connects volunteers with local community projects",
-        "Build a technology that assists elderly population with daily activities",
-        "Design an innovative approach to reduce electronic waste"
+        "The Open Innovation section allows participants to create projects that solve real-life problems they care about. It gives students the chance to show their creativity and problem-solving skills with their own ideas. If someone has worked on a similar project before, they can still participate by improving or adding new features. Projects will be judged based on how well they work, how creative they are, and the impact they can make. The goal is to give everyone a fair chance to share their ideas and make a difference."
       ]
     }
   ];
